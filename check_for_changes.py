@@ -1,6 +1,6 @@
 import difflib
 import smtplib
-ssl
+import ssl
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from pathlib import Path
@@ -30,7 +30,6 @@ if any(line.startswith('+ ') or line.startswith('- ') for line in diff):
     smtp_port = 586
     smtp_username = "ekanturadescript@rediffmail.com"
     smtp_password = "Password@123"
-
 
     # Create the email message
     message = MIMEMultipart()
