@@ -4,6 +4,8 @@ import ssl
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from pathlib import Path
+import requests  # Add this line to import the requests module
+
 
 # Load the saved source code
 saved_source_code_path = Path("source_code.html")
