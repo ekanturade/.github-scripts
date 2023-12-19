@@ -23,10 +23,10 @@ jobs:
           pip install beautifulsoup4 requests
 
       - name: Fetch source code
-        run: python .github-scripts/fetch_source_code.py
+        run: python ./fetch_source_code.py
 
       - name: Check for changes
-        run: python .github-scripts/check_for_changes.py
+        run: python ./check_for_changes.py
         env:
           SMTP_SERVER: smtp.rediffmail.com
           SMTP_PORT: 586
