@@ -28,8 +28,8 @@ jobs:
       - name: Check for changes
         run: python .github/scripts/check_for_changes.py
         env:
-          SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
-          SMTP_PORT: ${{ secrets.SMTP_PORT }}
-          EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}
-          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          SMTP_SERVER: smtp.rediffmail.com
+          SMTP_PORT: 586
+          EMAIL_USERNAME: ekanturadescript@rediffmail.com
+          EMAIL_PASSWORD: Password@123
           TO_EMAIL: ekant.urade@gmail.com
